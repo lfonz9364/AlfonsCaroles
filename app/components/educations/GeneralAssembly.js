@@ -14,11 +14,10 @@ export default class GeneralAssembly extends React.Component {
         <h2>Web Development Immersive</h2>
         <p>Projects:</p>
         <ul>
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
-          <li><a href="#">Project 4</a></li>
-          <li><a href="#">Project 5</a></li>
+          <li><a href="https://lfonz9364.github.io/projects/">Star Trek Toe</a></li>
+          <li><a href="https://desolate-tundra-35833.herokuapp.com/">Busy Bee</a></li>
+          <li><a href="https://calm-beach-35487.herokuapp.com/">Melbourne Property App</a></li>
+          <li><a href="https://mysterious-bastion-51155.herokuapp.com/">WDI Conference Carpool</a></li>
         </ul>
       </div>
   }
