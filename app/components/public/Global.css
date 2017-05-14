@@ -16,6 +16,25 @@ li {
   margin: 10px;
 }
 
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	background: #ddd;
+	margin: 20px 90px;
+
+	border-radius: 100%;
+	position: relative;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.circle input[type=checkbox]:checked {
+  background: #26ca28; 
+}
+
 .menu {
   width: 20%;
   background-color: grey;
