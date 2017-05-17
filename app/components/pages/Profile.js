@@ -9,7 +9,7 @@ export default class Profile extends React.Component {
 
   render(){
       return <div className="profile">
-        <img src="./images/profile.jpg" />
+        <img src="./images/profile.png" />
         <h2>"Web Development is about solving problems in many different ways"</h2>
         <p>
           I have experience in managing customers from diverse backgrounds. I have
