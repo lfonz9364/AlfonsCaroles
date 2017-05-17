@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 
 export default class Aswata extends React.Component {
 

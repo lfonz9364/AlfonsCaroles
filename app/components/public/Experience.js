@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 import AquaStar from '../experiences/AquaStar'
 import Aswata from '../experiences/Aswata'
 import Bantex from '../experiences/Bantex'

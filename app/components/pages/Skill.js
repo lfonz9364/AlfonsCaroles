@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 import ProgrammingSkill from '../skills/ProgrammingSkill'
 import Framework from '../skills/Framework'
 import Software from '../skills/Software'

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 import TimePeriod from '../public/TimePeriod'
 import Education from '../public/Education'
 import Experience from '../public/Experience'
