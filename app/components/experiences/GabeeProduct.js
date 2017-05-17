@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 
 export default class GabeeProduct extends React.Component {
 

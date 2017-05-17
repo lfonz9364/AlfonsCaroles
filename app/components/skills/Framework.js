@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 
 export default class Framework extends React.Component {
 

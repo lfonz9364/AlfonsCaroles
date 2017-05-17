@@ -1,5 +1,4 @@
 import React from 'react'
-import '../public/Global.css'
 import GeneralAssembly from '../educations/GeneralAssembly'
 import MonashCollege from '../educations/MonashCollege'
 import MonashUniversity from '../educations/MonashUniversity'
