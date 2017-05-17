@@ -1,5 +1,5 @@
 import React from 'react'
-import SideBar from './public/SideBar'
+import MenuBar from './public/MenuBar'
 import Profile from './pages/Profile'
 import Skill from './pages/Skill'
 import ContactMe from './pages/ContactMe'
@@ -23,22 +23,22 @@ export default class App extends React.Component {
   render(){
     if (this.state.page === 'Profile') {
       return <div>
-        <SideBar getSelection={this.getSelection} />
         <Profile />
+        <MenuBar getSelection={this.getSelection} page={this.state.page} />
       </div>
     } else if(this.state.page === 'Skills') {
       return <div>
-        <SideBar getSelection={this.getSelection} />
+        <MenuBar getSelection={this.getSelection} page={this.state.page} />
         <Skill />
       </div>
     } else if(this.state.page === 'Timeline') {
       return <div>
-        <SideBar getSelection={this.getSelection} />
+        <MenuBar getSelection={this.getSelection} page={this.state.page} />
         <Timeline />
       </div>
     } else if(this.state.page === 'Contact Me') {
       return <div>
-        <SideBar getSelection={this.getSelection} />
+        <MenuBar getSelection={this.getSelection} page={this.state.page} />
         <ContactMe />
       </div>
     }

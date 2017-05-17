@@ -1,54 +1,109 @@
 import React from 'react'
 import '../public/Global.css'
 
-export default class Timeline extends React.Component {
+export default class TimePeriod extends React.Component {
 
   constructor(props) {
     super(props)
-    this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
     this.state = {
       years: []
     }
   }
 
-  handleChange(event){
-    if(event.target.checked === false){
-      this.state.years = this.state.years.filter(function(val){ return val !== Number(event.target.value)})
-      this.props.getYear(this.state.years)
-    } else {
-      this.state.years.push(Number(event.target.value))
+  handleClick(event){
+    if(event.target.previousSibling.checked === false){
+      this.state.years.push(Number(event.target.previousSibling.value))
       this.props.getYear(this.state.years.sort())
+      event.target.previousSibling.checked = true
+    } else {
+      this.state.years = this.state.years.filter(function(val){ return val !== Number(event.target.previousSibling.value)})
+      this.props.getYear(this.state.years)
+      event.target.previousSibling.checked = false
     }
   }
 
   render(){
       return <div className="timeperiod">
-        <input class="circle" type="checkbox" value="2017" onChange={this.handleChange} />
-        <label>2017</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2017" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2017</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2016" onChange={this.handleChange} />
-        <label>2016</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2016" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2016</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2015" onChange={this.handleChange} />
-        <label>2015</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2015" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2015</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2014" onChange={this.handleChange} />
-        <label>2014</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2014" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2014</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2013" onChange={this.handleChange} />
-        <label>2013</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2013" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2013</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2012" onChange={this.handleChange} />
-        <label>2012</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2012" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2012</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2011" onChange={this.handleChange} />
-        <label>2011</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2011" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2011</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2010" onChange={this.handleChange} />
-        <label>2010</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2010" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2010</span>
+        </div>
 
-        <input class="circle" type="checkbox" value="2009" onChange={this.handleChange} />
-        <label>2009</label>
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="2009" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>2009</span>
+        </div>
+
+        <div className="checkboxGroup">
+          <div className="circle">
+            <input classID="circleInput" type="checkbox" value="1" />
+            <label htmlFor="circleInput" onClick={this.handleClick}></label>
+          </div>
+          <span>Show All</span>
+        </div>
       </div>
   }
 }

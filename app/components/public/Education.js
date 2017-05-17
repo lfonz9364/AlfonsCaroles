@@ -6,7 +6,7 @@ import MonashUniversity from '../educations/MonashUniversity'
 import PetraChristianUniversity from '../educations/PetraChristianUniversity'
 import filterYear from '../../lib/filterYear'
 
-export default class Experience extends React.Component {
+export default class Education extends React.Component {
 
   constructor(props) {
     super(props)

@@ -19,6 +19,8 @@ export default class ProgrammingSkill extends React.Component {
           <li><img src="./images/backbone.png" /></li>
           <li><img src="./images/ruby.jpeg" /></li>
           <li><img src="./images/nodejs.png" /></li>
+          <li><img src="./images/react.png" /></li>
+          <li><img src="./images/ruby-on-rails.png" /></li>
         </ul>
       </div>
   }

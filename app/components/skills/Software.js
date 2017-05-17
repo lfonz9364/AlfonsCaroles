@@ -14,7 +14,7 @@ export default class Software extends React.Component {
           <li><img src="./images/postgresql.png" /></li>
           <li><img src="./images/Atom.png" /></li>
           <li><img src="./images/sql-server.png" /></li>
-          <li><img src="#" /></li>
+          <li><img src="./images/msbids.jpg" /></li>
           <li><img src="./images/MSvisio.jpg" /></li>
           <li><img src="./images/myob-rm.jpg" /></li>
           <li><img src="./images/myob-exo.jpg" /></li>

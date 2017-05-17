@@ -14,8 +14,8 @@ export default class SomethingAussie extends React.Component {
         <h2>Position : Office, Warehouse and Network Admin</h2>
         <p>Key Responsibilities:</p>
         <ul>
-          <li>Computer and Network administration include setting NAS</li>
-          <li>Inventory and Stock control by comparing MYOB database with actual stock</li>
+          <li>Computer and Network administration</li>
+          <li>Inventory and Stock control</li>
           <li>Updating website's HTML and JavaScript code</li>
         </ul>
       </div>

@@ -15,7 +15,11 @@ export default class Timeline extends React.Component {
   }
 
   getYear(selectedYears){
-    this.setState({ period: selectedYears })
+    if(selectedYears[0] === 1 ){
+      this.setState({ period: [2009,2010,2011,2012,2013,2014,2015,2016,2017] })
+    } else {
+      this.setState({ period: selectedYears })
+    }
   }
 
   render(){
