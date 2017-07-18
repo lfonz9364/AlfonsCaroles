@@ -22,7 +22,7 @@ export default class Experience extends React.Component {
                   <JunctionNewsagency key="2" year={[2013,2014,2015,2016]}/>,
                   <GabeeProduct key="3" year={[2015]} />,
                   <SomethingAussie key="4" year={[2012,2013]} />,
-                  <Aswata key="5" year={[2011]} />,
+                  <Aswata key="5" year={[2010,2011]} />,
                   <Bantex key="6" year={[2009]} />
                 ]
     var period = this.props.period
